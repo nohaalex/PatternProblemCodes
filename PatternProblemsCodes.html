@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PATTERN PROBLEMS</title>
+    <style>
+        .Pattern1,.Pattern2,.Pattern3,.Pattern4,.Pattern5,.Pattern6,.Pattern7,.Pattern8,.Pattern9 {
+            display: none;
+	    text-align:center;
+        }
+	.p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		height:100vh;
+		
+		
+	}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".P1").click(function () {
+                $(".Pattern1").toggle();
+            });
+        });
+	$(document).ready(function () {
+            $(".P2").click(function () {
+                $(".Pattern2").toggle();
+            });
+        });
+	$(document).ready(function () {
+            $(".P3").click(function () {
+                $(".Pattern3").toggle();
+            });
+        });
+	$(document).ready(function () {
+            $(".P4").click(function () {
+                $(".Pattern4").toggle();
+            });
+        });
+	$(document).ready(function () {
+            $(".P5").click(function () {
+                $(".Pattern5").toggle();
+            });
+        });
+	$(document).ready(function () {
+            $(".P6").click(function () {
+                $(".Pattern6").toggle();
+            });
+        });
+	$(document).ready(function () {
+            $(".P7").click(function () {
+                $(".Pattern7").toggle();
+            });
+        });
+	$(document).ready(function () {
+            $(".P8").click(function () {
+                $(".Pattern8").toggle();
+            });
+        });
+	$(document).ready(function () {
+            $(".P9").click(function () {
+                $(".Pattern9").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+<h1 class=" bg-dark text-danger text-center">PATTERN PROBLEMS AND THEIR SOLUTIONS</h1>
+
+<br><br><br>
+
+<h2>INCREASING STAR PATTERN</h2>
+<h3 class="p1 h-50 w-50">
+    *
+    <br>
+    **
+    <br>
+    ***
+    <br>
+    ****
+    <br>
+    *****
+    <br>
+    ******
+    <br>
+</h3>
+
+<div class="Pattern1 bg-dark"> 
+    <code class="text-danger">
+        for (row = 1; row <= n; row++) {<br>
+            document.write("insert break tag here");<br> 
+            for (col = 1; col <= row; col++) {<br>
+                document.write("*");<br>
+            }<br>
+        }<br>
+    </code>
+</div>
+<button class="P1">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+<br><br><br>
+
+
+
+<h2>BOX STAR PATTERN</h2>
+<h3 class="p2 h-50 w-50">
+    
+
+******<br>
+******<br>
+******<br>
+******<br>
+******<br>
+******<br>
+</h3>
+
+<div class="Pattern2 bg-dark"> 
+    <code class="text-danger">
+      for(row=1;row<=n;row++){<br>
+	document.write("insert break tag here");<br>
+	 for(col=1;col<=n;col++){<br>
+		document.write("*");<br>
+	}<br>
+}<br>
+    </code>
+</div>
+<button class="P2">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+
+<br><br><br>
+
+
+
+<h2>DECREASING STAR PATTERN</h2>
+<h3 class="p3 h-50 w-50">
+   
+******<br>
+*****<br>
+****<br>
+***<br>
+**<br>
+* <br>
+
+
+</h3>
+
+<div class="Pattern3 bg-dark"> 
+    <code class="text-danger">
+   for(row=1;row<=n;row++){<br>
+	document.write("insert break tag here");<br>
+	 for(col=row;col<=n;col++){<br>
+		document.write("*");<br>
+	}<br>
+}<br>
+    </code>
+</div>
+<button class="P3">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+<br><br><br>
+
+
+
+<h2>INCREASING NUMBER PATTERN</h2>
+<h3 class="p4 h-50 w-50">
+1<br>
+12<br>
+123<br>
+1234<br>
+12345<br>
+123456<br>
+
+
+
+</h3>
+
+<div class="Pattern4 bg-dark"> 
+    <code class="text-danger">
+  for(row=1;row<=n;row++){<br>
+	document.write("insert break tag here");<br>
+	 for(col=1;col<=row;col++){<br>
+		document.write(col);<br>
+	}<br>
+}  <br>
+
+    </code>
+</div>
+<button class="P4">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+
+
+
+<br><br><br>
+
+
+
+<h2>RIGHTSIDE TILTED TRIANGLE</h2>
+<h3 class="p5 h-50 w-50">
+*<br>
+**<br>
+***<br>
+****<br>
+*****<br>
+******<br>
+*****<br>
+****<br>
+***<br>
+**<br>
+*<br>
+
+
+
+</h3>
+
+<div class="Pattern5 bg-dark"> 
+    <code class="text-danger">
+  for(row=1;row<=(2*n)-1;row++){<br>
+	document.write("insert break tag here");<br>
+	totcol=(row>n)?((2*n)-row):row;<br>
+	 for(col=1;col<=totcol;col++){<br>
+		document.write("*");<br>
+	}<br>
+}<br>
+
+    </code>
+</div>
+<button class="P5">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+
+
+<br><br><br>
+
+
+
+<h2>DIAMOND </h2>
+<h3 class="p6 h-50 w-50 ">
+   
+<img src="C:\Users\Lenovo\Desktop\diamond.jpg" height="150px" width="150px"/>
+  
+
+
+
+</h3>
+
+<div class="Pattern6 bg-dark"> 
+    <code class="text-danger">
+ 	for(row=1;row<=(2*n)-1;row++){  <br>
+	document.write("insert break tag here");<br>
+	totcol=(row>n)?((2*n)-row):row;<br>
+	sp=(row==n)?0:(n-totcol);<br>
+
+	for(s=1;s<=sp;s++){<br>
+		document.write("&nbsp");<br>
+	}<br>
+
+	 for(col=1;col<=totcol;col++){<br>
+		document.write("*");<br>
+	}<br>
+
+	
+}<br>
+    </code>
+</div>
+<button class="P6">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+
+
+<br><br><br>
+
+
+
+<h2>NUMBER PYRAMID</h2>
+<h3 class="p7 h-50 w-50 ">
+   
+<img src="C:\Users\Lenovo\Desktop\numberpyramid.jpg" height="150px" width="150px"/>
+  
+
+
+
+</h3>
+
+<div class="Pattern7 bg-dark"> 
+    <code class="text-danger">
+ 	for(row=1;row<=n;row++){ <br>
+	document.write("insert break tag here");<br>
+	for(s=1;s<=(n-row);s++){<br>
+		document.write("&nbsp ");<br>
+	}<br>
+	for(c=row;c>=1;c--){<br>
+		document.write(c);<br>
+	}<br>
+	for(c=2;c<=row;c++){<br>
+		document.write(c);<br>
+	}<br>
+}<br>
+    </code>
+</div>
+<button class="P7">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+
+<br><br><br>
+
+
+
+<h2>NUMBER DIAMOND</h2>
+<h3 class="p8 h-50 w-50 ">
+   
+<img src="C:\Users\Lenovo\Desktop\numberdiamond.jpg" height="150px" width="150px"/>
+  
+
+
+
+</h3>
+
+<div class="Pattern8 bg-dark"> 
+    <code class="text-danger">
+ 	for(row=1;row<=(2*n)-1;row++){<br>
+	document.write("insert break tag here");<br>
+	totcol=(row>n)?((2*n)-row):row;<br>
+
+	for(s=1;s<=(n-totcol);s++){<br>
+		document.write("&nbsp ");<br>
+	}<br>
+	for(c=totcol;c>=1;c--){<br>
+		document.write(c);<br>
+	}<br>
+	for(c=2;c<=totcol;c++){<br>
+		document.write(c);<br>
+	}<br>
+}<br>
+
+    </code>
+</div>
+<button class="P8">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+<br><br><br>
+
+
+
+<h2>BOX PATTERN EXQUISITE</h2>
+<h3 class="p9 h-50 w-50 ">
+   
+<img src="C:\Users\Lenovo\Desktop\boxexquisite.jpg" height="190px" width="180px"/>
+  
+
+
+
+</h3>
+
+<div class="Pattern9 bg-dark"> 
+    <code class="text-danger">
+ 	realn=n;<br>
+n=2*n;<br>
+for(row=1;row<=(n-1);row++){<br>
+	document.write("insert break tag here");<br>
+	for(col=1;col<=(n-1);col++){<br>
+		index=(realn+1)-Math.min(Math.min(row,col),Math.min(n-row,n-col));<br>
+		document.write(index+" ");<br>
+	}<br>
+}<br>
+
+    </code>
+</div>
+<button class="P9">CLICK TO SHOW CODE</button>
+<hr class="bg-danger" style="height:10px">
+</body>
+</html>
